@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Le Pavé Digital — Audit Logistique IA</title>
+<meta name="description" content="Audit automatisé de factures transport pour TPE/PME chargeurs des Hauts-de-France. Détection IA de 26 types de frais cachés. Récupérez 3 à 7 % de votre budget transport.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Inter', system-ui, sans-serif; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  @media print {
+    .no-print { display: none; }
+    .page { page-break-after: always; }
+    body { background: white; }
+  }
+</style>
+</head>
+<body class="bg-slate-50">
+
+<div class="no-print fixed top-4 right-4 z-50">
+  <button onclick="window.print()" class="bg-slate-900 text-white px-5 py-3 rounded-xl shadow-lg font-medium text-sm hover:bg-slate-700">📄 Imprimer / Export PDF</button>
+</div>
+
+<!-- ============ PAGE 1 — ONE-PAGER PROSPECT ============ -->
+<div class="page max-w-5xl mx-auto bg-white shadow-xl my-8 p-12">
+
+  <div class="flex items-start justify-between mb-12">
+    <div>
+      <div class="inline-block bg-gradient-to-r from-slate-900 to-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold tracking-wide mb-4">LE PAVÉ DIGITAL · AUDIT TRANSPORT IA</div>
+      <h1 class="text-5xl font-extrabold tracking-tight text-slate-900">Récupérez<br><span class="bg-gradient-to-r from-rose-500 to-red-600 bg-clip-text text-transparent">3 à 7 % de votre budget transport</span></h1>
+      <p class="text-xl text-slate-600 mt-3 max-w-2xl">Détection automatique des écarts entre vos factures fournisseurs et vos devis négociés. Mail de contestation généré en 15 secondes.</p>
+    </div>
+    <div class="text-right">
+      <div class="text-xs uppercase font-semibold text-slate-400">Réservé aux PME logistique</div>
+      <div class="text-slate-700 mt-1 text-sm">Hauts-de-France · Nord</div>
+    </div>
+  </div>
+
+  <!-- HERO STATS -->
+  <div class="grid grid-cols-3 gap-6 mb-12">
+    <div class="bg-gradient-to-br from-rose-500 to-red-600 text-white rounded-2xl p-6 shadow-lg">
+      <div class="text-5xl font-extrabold">1/4</div>
+      <div class="font-semibold mt-2">facture transport contient une erreur</div>
+      <div class="text-xs opacity-80 mt-3">Source : DataFret, étude 2024</div>
+    </div>
+    <div class="bg-gradient-to-br from-amber-400 to-orange-500 text-white rounded-2xl p-6 shadow-lg">
+      <div class="text-5xl font-extrabold">5,8 %</div>
+      <div class="font-semibold mt-2">d'écart moyen détecté par facture</div>
+      <div class="text-xs opacity-80 mt-3">Source : audits de facturation transport</div>
+    </div>
+    <div class="bg-gradient-to-br from-slate-900 to-slate-700 text-white rounded-2xl p-6 shadow-lg">
+      <div class="text-5xl font-extrabold">90 %</div>
+      <div class="font-semibold mt-2">des PME n'auditent pas leurs factures</div>
+      <div class="text-xs opacity-80 mt-3">→ argent perdu invisible</div>
+    </div>
+  </div>
+
+  <!-- LE PROBLÈME -->
+  <div class="mb-10">
+    <div class="text-xs uppercase font-bold tracking-wider text-slate-500 mb-2">Le problème</div>
+    <h2 class="text-2xl font-bold text-slate-900 mb-3">Vos transporteurs profitent du chaos du gazole, des surcharges et des frais accessoires</h2>
+    <p class="text-slate-700 leading-relaxed">L'indexation gazole obligatoire (loi 5 janvier 2006) est calculée différemment par chaque transporteur. Les BAF dépassent les plafonds négociés, les frais de dossier sont facturés deux fois, des surestaries apparaissent sans justificatif, des péages et surcharges ADR sont refacturés en doublon. Sur une PME chargeur qui dépense <strong>800 K€/an</strong> en transport, c'est <strong>jusqu'à 40 K€/an</strong> qui partent en fumée — invisibles parce que personne n'a le temps d'auditer ligne par ligne 200 factures par mois.</p>
+  </div>
+
+  <!-- LA SOLUTION -->
+  <div class="bg-gradient-to-br from-slate-50 to-blue-50 border border-slate-200 rounded-3xl p-8 mb-10">
+    <div class="text-xs uppercase font-bold tracking-wider text-slate-500 mb-2">La solution</div>
+    <h2 class="text-2xl font-bold text-slate-900 mb-6">Audit Logistique IA — vos 200 factures auditées en 200 secondes</h2>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="bg-white rounded-xl p-5 shadow-sm">
+        <div class="text-3xl mb-2">📥</div>
+        <div class="font-bold text-slate-900">1. Vous envoyez</div>
+        <div class="text-sm text-slate-600 mt-1">Glissez le PDF ou forwardez par mail à une adresse dédiée.</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 shadow-sm">
+        <div class="text-3xl mb-2">🤖</div>
+        <div class="font-bold text-slate-900">2. L'IA compare</div>
+        <div class="text-sm text-slate-600 mt-1">Vision Claude lit votre PDF, compare au devis négocié, détecte <strong>26 types de frais cachés</strong>.</div>
+      </div>
+      <div class="bg-white rounded-xl p-5 shadow-sm">
+        <div class="text-3xl mb-2">✉️</div>
+        <div class="font-bold text-slate-900">3. Vous contestez</div>
+        <div class="text-sm text-slate-600 mt-1">Mail de contestation rédigé prêt à envoyer : chiffres précis + clause du devis enfreinte.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROI : MODÉLISATION + CALCULATEUR INTERACTIF -->
+  <div class="grid grid-cols-2 gap-8 mb-10">
+    <div>
+      <div class="text-xs uppercase font-bold tracking-wider text-slate-500 mb-2">Calculez votre ROI</div>
+      <h3 class="text-xl font-bold text-slate-900 mb-4">Estimation en direct</h3>
+      <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200">
+        <label class="text-xs uppercase font-bold text-slate-500">Votre budget transport annuel HT</label>
+        <div class="flex items-center gap-2 mt-1 mb-4">
+          <input id="roiBudget" type="number" value="800000" min="50000" step="10000"
+            class="w-full px-3 py-2 border border-slate-300 rounded-lg text-lg font-mono font-bold text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-500" />
+          <span class="text-slate-600 font-semibold">€</span>
+        </div>
+        <table class="w-full text-sm">
+          <tr class="border-b border-slate-200"><td class="py-2 text-slate-600">Taux d'erreur moyen (5 %)</td><td class="py-2 text-right font-mono font-bold text-rose-600" id="roiErreur">40 000 €</td></tr>
+          <tr class="border-b border-slate-200"><td class="py-2 text-slate-600">Récupération réaliste (60 %)</td><td class="py-2 text-right font-mono font-bold text-emerald-600" id="roiRecup">24 000 €</td></tr>
+          <tr class="border-b border-slate-200"><td class="py-2 text-slate-600">Coût annuel formule Pro</td><td class="py-2 text-right font-mono" id="roiCout">5 988 €</td></tr>
+          <tr class="bg-emerald-50"><td class="py-3 px-2 font-bold text-emerald-900">Bénéfice net annuel</td><td class="py-3 px-2 text-right font-mono font-extrabold text-emerald-700 text-lg" id="roiBenef">+18 012 €</td></tr>
+        </table>
+        <div class="text-xs text-slate-500 mt-3">ROI <strong id="roiX">×4</strong> dès la première année · Rentabilisé en <strong id="roiJ">~91 jours</strong>.</div>
+      </div>
+      <script>
+        (function(){
+          const fmt = n => new Intl.NumberFormat('fr-FR',{maximumFractionDigits:0}).format(Math.round(n));
+          const i = document.getElementById('roiBudget');
+          function refresh(){
+            const b = Math.max(0, parseFloat(i.value)||0);
+            const err = b * 0.05;
+            const rec = err * 0.60;
+            const cout = 5988;
+            const benef = rec - cout;
+            const roi = cout > 0 ? rec / cout : 0;
+            const jours = rec > 0 ? Math.round(365 * cout / rec) : 0;
+            document.getElementById('roiErreur').textContent = fmt(err)+' €';
+            document.getElementById('roiRecup').textContent  = fmt(rec)+' €';
+            document.getElementById('roiCout').textContent   = fmt(cout)+' €';
+            document.getElementById('roiBenef').textContent  = (benef>=0?'+':'')+fmt(benef)+' €';
+            document.getElementById('roiX').textContent      = '×'+(roi).toFixed(1);
+            document.getElementById('roiJ').textContent      = '~'+jours+' jours';
+          }
+          i.addEventListener('input', refresh);
+          refresh();
+        })();
+      </script>
+    </div>
+    <div>
+      <div class="text-xs uppercase font-bold tracking-wider text-slate-500 mb-2">Ce qu'on détecte automatiquement</div>
+      <p class="text-xs text-slate-500 mb-3"><strong>26 catégories</strong> · Voici les principales :</p>
+      <ul class="space-y-2 text-sm">
+        <li class="flex gap-3"><span class="text-rose-500 font-bold">✗</span><span><strong>BAF / surcharge carburant en excès</strong> — calcul indice CNR mensuel vs baseline</span></li>
+        <li class="flex gap-3"><span class="text-rose-500 font-bold">✗</span><span><strong>Frais de dossier en doublon</strong> — déjà inclus au devis cadre</span></li>
+        <li class="flex gap-3"><span class="text-rose-500 font-bold">✗</span><span><strong>Manutention excessive</strong> — au-delà du plafond négocié</span></li>
+        <li class="flex gap-3"><span class="text-rose-500 font-bold">✗</span><span><strong>Surestaries non justifiées</strong> — attente quai sans preuve</span></li>
+        <li class="flex gap-3"><span class="text-rose-500 font-bold">✗</span><span><strong>Péages refacturés en excès</strong> — au-delà du seuil contractuel</span></li>
+        <li class="flex gap-3"><span class="text-rose-500 font-bold">✗</span><span><strong>Surcharges ADR / hayon / RDV / ZFE</strong> non documentées au dossier</span></li>
+        <li class="flex gap-3"><span class="text-rose-500 font-bold">✗</span><span><strong>Anomalie pondéreux</strong> — règle 1 m³ = 250 / 333 kg mal appliquée</span></li>
+        <li class="flex gap-3"><span class="text-rose-500 font-bold">✗</span><span><strong>Escompte non appliqué</strong>, TGAP excès, ad valorem doublonné, TVA territorialité</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- BANDEAU CONFIANCE -->
+  <div class="grid grid-cols-4 gap-3 mb-10">
+    <div class="bg-white border border-slate-200 rounded-xl p-4 flex flex-col items-center text-center">
+      <div class="text-2xl mb-1">🇫🇷</div>
+      <div class="text-xs font-bold text-slate-900">Hébergement France</div>
+      <div class="text-xs text-slate-500 mt-1">Scaleway Paris · OVH Roubaix</div>
+    </div>
+    <div class="bg-white border border-slate-200 rounded-xl p-4 flex flex-col items-center text-center">
+      <div class="text-2xl mb-1">🔒</div>
+      <div class="text-xs font-bold text-slate-900">Conforme RGPD</div>
+      <div class="text-xs text-slate-500 mt-1">DPA signé · données isolées</div>
+    </div>
+    <div class="bg-white border border-slate-200 rounded-xl p-4 flex flex-col items-center text-center">
+      <div class="text-2xl mb-1">✋</div>
+      <div class="text-xs font-bold text-slate-900">Validation humaine</div>
+      <div class="text-xs text-slate-500 mt-1">Aucun mail envoyé sans votre accord</div>
+    </div>
+    <div class="bg-white border border-slate-200 rounded-xl p-4 flex flex-col items-center text-center">
+      <div class="text-2xl mb-1">📤</div>
+      <div class="text-xs font-bold text-slate-900">Export à tout moment</div>
+      <div class="text-xs text-slate-500 mt-1">Historique JSON / CSV / PDF</div>
+    </div>
+  </div>
+
+  <!-- POURQUOI MAINTENANT -->
+  <div class="border-l-4 border-slate-900 pl-6 mb-10">
+    <div class="text-xs uppercase font-bold tracking-wider text-slate-500 mb-2">Pourquoi maintenant ?</div>
+    <p class="text-slate-700 leading-relaxed">Les <strong>Hauts-de-France sont la 1ʳᵉ région logistique de France</strong> (103 100 salariés, 7,7 % de l'emploi régional — Insee 2024). Le seul CRT de Lesquin concentre <strong>546 entreprises et 14 546 salariés</strong>. La volatilité du gazole 2025-2026 rend l'indexation carburant impossible à vérifier à la main. La FNTR alerte sur la pression marges. <strong>C'est maintenant que les écarts se multiplient — et que personne ne les voit.</strong></p>
+  </div>
+
+  <!-- TARIFICATION -->
+  <div class="bg-slate-900 text-white rounded-3xl p-8 mb-8">
+    <div class="grid grid-cols-3 gap-6">
+      <div>
+        <div class="text-xs uppercase font-bold tracking-wider text-slate-400 mb-2">Formule Démarrage</div>
+        <div class="text-3xl font-extrabold">199 €<span class="text-sm font-normal text-slate-400"> / mois</span></div>
+        <div class="text-sm text-slate-300 mt-3">Jusqu'à 50 factures/mois. 1 utilisateur. Support email.</div>
+      </div>
+      <div class="border-x border-slate-700 px-6 relative">
+        <div class="absolute -top-3 left-6 bg-gradient-to-r from-emerald-400 to-green-500 text-white text-xs font-bold px-2 py-1 rounded">RECOMMANDÉ</div>
+        <div class="text-xs uppercase font-bold tracking-wider text-slate-400 mb-2">Formule Pro</div>
+        <div class="text-3xl font-extrabold">499 €<span class="text-sm font-normal text-slate-400"> / mois</span></div>
+        <div class="text-sm text-slate-300 mt-3">Factures illimitées. Multi-utilisateur. Email-in + Sheet sync. Onboarding inclus.</div>
+      </div>
+      <div>
+        <div class="text-xs uppercase font-bold tracking-wider text-slate-400 mb-2">Formule Sur-mesure</div>
+        <div class="text-3xl font-extrabold">Sur devis</div>
+        <div class="text-sm text-slate-300 mt-3">Intégration Pennylane/Sage. Rapport mensuel personnalisé. SLA dédié.</div>
+      </div>
+    </div>
+    <div class="mt-6 pt-6 border-t border-slate-700 text-center">
+      <div class="text-sm text-slate-300">✓ Setup offert · ✓ Sans engagement · <strong>✓ Garantie : si on ne vous fait pas récupérer 5× votre abonnement en 90 jours, remboursé</strong></div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="text-center pt-6">
+    <div class="text-2xl font-bold text-slate-900 mb-2">Démo 15 minutes en visio — avec VOS factures réelles</div>
+    <p class="text-slate-600 mb-4">Envoyez-moi 3 factures de votre dernier mois. Je vous montre en direct ce qu'on récupère.</p>
+    <div class="inline-flex gap-3 flex-wrap justify-center">
+      <a href="mailto:contact@lepavedigital.fr?subject=Demande%20de%20d%C3%A9mo%20Le%20Pav%C3%A9%20Digital" class="bg-gradient-to-r from-slate-900 to-slate-700 text-white px-8 py-3 rounded-xl font-semibold hover:from-slate-800 hover:to-slate-600 shadow-lg">📧 Réserver ma démo</a>
+      <a href="https://calendly.com/lepavedigital/demo-15min" class="bg-white border-2 border-slate-900 text-slate-900 px-8 py-3 rounded-xl font-semibold hover:bg-slate-50">📅 Choisir un créneau Calendly</a>
+      <a href="https://app.lepavedigital.fr/webhook/Form" class="bg-white border-2 border-slate-300 text-slate-900 px-8 py-3 rounded-xl font-semibold hover:border-slate-500">🚀 Tester en libre-service</a>
+    </div>
+  </div>
+
+  <div class="mt-12 pt-6 border-t border-slate-200 text-xs text-slate-400 text-center">
+    Mano Szeferowicz · contact@lepavedigital.fr · [TÉL À COMPLÉTER] · [LINKEDIN À COMPLÉTER]<br>
+    Sources : DataFret, Fretly (taux d'erreur factures), Capgemini & Deloitte (économies récupérables), Insee Hauts-de-France 2024 (emploi logistique), CNR (indice gazole), CRT Lesquin.
+  </div>
+</div>
+
+<!-- ============ PAGE 2 — SCREENSHOTS DÉMO ============ -->
+<div class="page max-w-5xl mx-auto bg-white shadow-xl my-8 p-12">
+  <div class="mb-8">
+    <div class="text-xs uppercase font-bold tracking-wider text-slate-500 mb-2">Aperçu produit</div>
+    <h2 class="text-3xl font-bold text-slate-900">L'expérience client en 3 écrans</h2>
+  </div>
+
+  <!-- Screen 1 -->
+  <div class="mb-10">
+    <div class="text-sm font-bold text-slate-700 mb-3">① Glissez la facture PDF</div>
+    <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-10 border border-slate-200">
+      <div class="bg-white rounded-2xl shadow-lg p-8">
+        <div class="border-2 border-dashed border-slate-300 rounded-xl p-10 text-center">
+          <div class="text-5xl mb-3">📄</div>
+          <div class="font-bold text-slate-700">Glissez votre facture PDF ici</div>
+          <div class="text-sm text-slate-500 mt-1">ou cliquez pour parcourir</div>
+        </div>
+        <button class="w-full bg-gradient-to-r from-slate-900 to-slate-700 text-white py-3 rounded-xl mt-4 font-semibold">Lancer l'audit</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Screen 2 -->
+  <div class="mb-10">
+    <div class="text-sm font-bold text-slate-700 mb-3">② L'IA détecte les anomalies en 5 secondes</div>
+    <div class="bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
+      <div class="bg-gradient-to-r from-rose-500 to-red-600 p-6 text-white">
+        <div class="text-5xl">⚠</div>
+        <div class="text-2xl font-bold mt-1">Litige détecté · severity high</div>
+        <div class="opacity-90">5 anomalies détectées · écart +13,1 %</div>
+      </div>
+      <div class="p-6 grid grid-cols-2 gap-4">
+        <div class="bg-rose-50 rounded-xl p-4">
+          <div class="text-xs uppercase text-rose-700 font-bold">Écart en euros</div>
+          <div class="text-4xl font-bold text-rose-700">288,00 €</div>
+        </div>
+        <div class="bg-rose-50 rounded-xl p-4">
+          <div class="text-xs uppercase text-rose-700 font-bold">Écart en %</div>
+          <div class="text-4xl font-bold text-rose-700">13,1 %</div>
+        </div>
+        <div class="col-span-2 mt-2">
+          <div class="text-xs uppercase text-slate-500 font-bold mb-2">Frais cachés détectés (extraits des 26 catégories)</div>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold">surcharge_carburant_excess</span>
+            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold">peages_excess</span>
+            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold">surcharge_adr_excess</span>
+            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold">frais_manutention_excess</span>
+            <span class="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-bold">frais_relivraison_excess</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Screen 3 -->
+  <div class="mb-10">
+    <div class="text-sm font-bold text-slate-700 mb-3">③ Mail de contestation prêt — un clic et c'est envoyé</div>
+    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 font-mono text-sm text-slate-700">
+      <div class="text-xs text-slate-500 mb-2">À : facturation.fr@dachser.com · Objet : Contestation Facture DAC-2026-0987 - Dossier DEMO-SHP-2026-003</div>
+      <div class="whitespace-pre-line text-xs leading-relaxed">Madame, Monsieur,
+
+Après audit de votre facture DAC-2026-0987 du 17/05/2026 (dossier DEMO-SHP-2026-003, transport Roubaix → Paris 4ème), nous constatons un écart de 288,00 € HT entre le montant facturé (2 488,00 € HT) et le montant contractuellement négocié (2 200,00 € HT), soit +13,1 % — résultant des anomalies suivantes :
+
+1. Surcharge carburant (BAF) : 95,00 € facturés vs 18,04 € maximum contractuel calculé sur indice CNR Gazole Pro mai 2026 = 152,6 (baseline contractuelle 148,2, fuel weight 30 %, formule citée au contrat CTR-DAC-2026-LPD). Excès non justifié de 76,96 €.
+
+2. Péages refacturés : 295,00 € soit 16,4 % du transport HT, au-delà du seuil contractuel de 12 %. Écart de 79,00 €.
+
+3. Surcharge ADR matières dangereuses : 60,00 € facturés alors qu'aucune mention ADR ne figure au dossier transport.
+
+4. Manutention quai : 55,00 € facturés vs plafond contractuel 35,00 €. Excès de 20,00 €.
+
+5. Frais de re-livraison : 40,00 € facturés sans preuve de présentation infructueuse.
+
+Nous vous remercions de bien vouloir émettre une facture rectificative ramenant le total HT à 2 200,00 € dans un délai de 7 jours ouvrés à compter de la réception de ce courrier.
+
+Cordialement,
+Service Comptabilité
+Le Pavé Digital</div>
+      <button class="mt-4 bg-slate-900 text-white px-4 py-2 rounded-lg text-xs font-bold">📋 Copier le mail</button>
+    </div>
+  </div>
+
+  <div class="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-xl">
+    <div class="font-bold text-emerald-900 mb-1">Démo en 15 minutes — avec VOS vraies factures</div>
+    <div class="text-emerald-800 text-sm">Je me connecte avec vous, vous me glissez 3 factures du mois dernier, on fait le total des erreurs détectées en live. Si je trouve moins que 3× le prix de l'abonnement, vous repartez sans rien acheter.</div>
+  </div>
+</div>
+
+</body>
+</html>
