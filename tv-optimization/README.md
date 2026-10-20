@@ -16,6 +16,7 @@ Le script se lance **depuis un ordinateur connecté au même Wi-Fi que la TV**.
 ```bash
 ./optimize-tcl-tv.sh 192.168.1.42 scan       # voir ce qui est installé
 ./optimize-tcl-tv.sh 192.168.1.42 optimize   # optimiser
+./optimize-tcl-tv.sh 192.168.1.42 launcher   # remplacer l'accueil Google TV (voir plus bas)
 ./optimize-tcl-tv.sh 192.168.1.42 restore    # tout annuler si besoin
 ```
 Au premier lancement, la TV demande d'autoriser l'ordinateur : choisir **Toujours autoriser**.
@@ -27,6 +28,14 @@ Au premier lancement, la TV demande d'autoriser l'ordinateur : choisir **Toujour
 
 L'Assistant Google est désactivé : le bouton micro de la télécommande et la recherche vocale ne marcheront plus (`restore` les réactive).
 Netflix, YouTube, Prime et le lanceur Google TV ne sont pas touchés.
+
+## Ce que fait `launcher`
+L'accueil Google TV affiche une grande bannière d'aperçus impossible à couper dans les réglages.
+1. Sur la TV, installer **Projectivy Launcher** depuis le Play Store.
+2. Lancer `launcher` : l'accueil Google TV est désactivé et la touche Accueil ouvre Projectivy.
+   Si la TV demande quel accueil utiliser, choisir Projectivy puis « Toujours ».
+
+`restore` réactive l'accueil Google TV.
 
 ## Astuces sans ordinateur
 - Débrancher la TV 30 s de temps en temps (vraie remise à zéro de la mémoire).

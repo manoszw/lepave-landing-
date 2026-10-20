@@ -5,13 +5,14 @@
 # Usage :
 #   ./optimize-tcl-tv.sh <IP_DE_LA_TV> scan       # liste les applis installées
 #   ./optimize-tcl-tv.sh <IP_DE_LA_TV> optimize   # applique les optimisations
+#   ./optimize-tcl-tv.sh <IP_DE_LA_TV> launcher   # remplace l'accueil Google TV par Projectivy
 #   ./optimize-tcl-tv.sh <IP_DE_LA_TV> restore    # annule tout
 set -euo pipefail
 
 IP="${1:-}"
 MODE="${2:-}"
-if [[ -z "$IP" || ! "$MODE" =~ ^(scan|optimize|restore)$ ]]; then
-  sed -n '5,8p' "$0"; exit 1
+if [[ -z "$IP" || ! "$MODE" =~ ^(scan|optimize|launcher|restore)$ ]]; then
+  sed -n '5,9p' "$0"; exit 1
 fi
 command -v adb >/dev/null || { echo "adb introuvable : installe 'android-platform-tools'."; exit 1; }
 
@@ -41,6 +42,13 @@ BLOAT=(
   com.android.printspooler
   com.google.android.katniss        # Assistant Google (voix + bouton micro)
 )
+
+# Accueil Google TV (bannière d'aperçus) et son accueil de secours.
+STOCK_LAUNCHER=(
+  com.google.android.apps.tv.launcherx
+  com.google.android.tungsten.setupwraith
+)
+PROJECTIVY=com.spocky.projengmenu
 
 adb connect "$IP:5555" >/dev/null
 echo "Connecté à $IP — si la TV affiche « Autoriser le débogage ? », accepte."
@@ -76,11 +84,26 @@ case "$MODE" in
     echo "Terminé. Redémarre la TV (débranche 30 s) pour un effet maximal."
     ;;
 
+  launcher)
+    installed="$("${A[@]}" pm list packages | sed 's/package://' | tr -d '\r')"
+    if ! grep -qx "$PROJECTIVY" <<<"$installed"; then
+      echo "Installe d'abord « Projectivy Launcher » depuis le Play Store de la TV, puis relance."
+      exit 1
+    fi
+    for p in "${STOCK_LAUNCHER[@]}"; do
+      if grep -qx "$p" <<<"$installed"; then
+        "${A[@]}" pm disable-user --user 0 "$p" >/dev/null && echo "   désactivé : $p"
+      fi
+    done
+    "${A[@]}" input keyevent KEYCODE_HOME
+    echo "Terminé. Si la TV demande quel accueil utiliser, choisis Projectivy puis « Toujours »."
+    ;;
+
   restore)
     for k in window_animation_scale transition_animation_scale animator_duration_scale; do
       "${A[@]}" settings put global "$k" 1.0
     done
-    for p in "${BLOAT[@]}"; do
+    for p in "${BLOAT[@]}" "${STOCK_LAUNCHER[@]}"; do
       "${A[@]}" pm enable "$p" >/dev/null 2>&1 && echo "   réactivé : $p" || true
     done
     echo "Réglages d'origine restaurés."
