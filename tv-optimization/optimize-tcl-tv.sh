@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Optimisation d'une TV TCL Google TV (testé pour 65C845) via ADB.
+# Optimisation d'une TV TCL Google TV (prévu pour la 65C845, pas encore testé) via ADB.
 # Tout est réversible : les applis sont désactivées (pas supprimées).
 #
 # Usage :
