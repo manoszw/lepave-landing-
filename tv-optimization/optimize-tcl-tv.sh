@@ -25,6 +25,15 @@ BLOAT=(
   com.tcl.MultiScreenInteraction_TV # T-Cast
   com.tcl.gallery                   # Galerie TCL
   com.tcl.ui_mediaCenter            # Lecteur média TCL
+  com.tcl.channelplus               # TCL Channel+ (chaînes sponsorisées)
+  com.tcl.messagebox                # Messages promotionnels TCL
+  com.tcl.exhibit                   # Mode démo magasin
+  com.tcl.esticker                  # Autocollants pub du mode magasin
+  com.tcl.logkit                    # Collecte de journaux
+  com.tcl.smartalexa                # Alexa
+  com.tcl.ocean.instructions        # Mode d'emploi intégré
+  com.tcl.repairguide               # Guide de réparation
+  com.tcl.browser                   # Navigateur TCL
   com.google.android.feedback       # Envoi de rapports Google
   com.google.android.tvrecommendations
   com.google.android.play.games
