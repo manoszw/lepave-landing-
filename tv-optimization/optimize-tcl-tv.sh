@@ -30,6 +30,7 @@ BLOAT=(
   com.google.android.play.games
   com.google.android.marvin.talkback
   com.android.printspooler
+  com.google.android.katniss        # Assistant Google (voix + bouton micro)
 )
 
 adb connect "$IP:5555" >/dev/null

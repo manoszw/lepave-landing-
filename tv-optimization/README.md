@@ -22,10 +22,11 @@ Au premier lancement, la TV demande d'autoriser l'ordinateur : choisir **Toujour
 
 ## Ce que fait `optimize`
 - Animations à 0.5x → menus nettement plus vifs.
-- Désactive (sans supprimer) les applis TCL/Google de fond : TCL Channel, météo, télémétrie…
+- Désactive (sans supprimer) les applis TCL/Google de fond : TCL Channel, météo, télémétrie, Assistant Google…
 - Vide les caches et ferme les processus inutiles.
 
-Netflix, YouTube, Prime, l'assistant vocal et le lanceur Google TV ne sont pas touchés.
+L'Assistant Google est désactivé : le bouton micro de la télécommande et la recherche vocale ne marcheront plus (`restore` les réactive).
+Netflix, YouTube, Prime et le lanceur Google TV ne sont pas touchés.
 
 ## Astuces sans ordinateur
 - Débrancher la TV 30 s de temps en temps (vraie remise à zéro de la mémoire).
